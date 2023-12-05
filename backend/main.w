@@ -5,6 +5,7 @@ bring http;
 
 let react = new ex.ReactApp(
   projectPath: "../client",
+  localPort: 4001
 );
 
 let api = new cloud.Api(
