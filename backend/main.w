@@ -13,6 +13,13 @@ let api = new cloud.Api(
 
 react.addEnvironment("apiUrl", api.url);
 
+api.get("/", inflight () => {
+  return {
+    status:200,
+    body: "Hello Wing"
+  };
+});
+
 api.get("/title", inflight () => {
   return {
     status:200,
