@@ -1,5 +1,5 @@
 #!/bin/sh
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+DIR="$( cd "$( dirname "$0" )" && pwd )"
 
-cd "$SCRIPT_DIR"/../client
+cd "$DIR"/../client
 npm install
