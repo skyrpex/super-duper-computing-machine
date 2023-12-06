@@ -5,7 +5,7 @@ bring http;
 
 let react = new ex.ReactApp(
   projectPath: "../client",
-  localPort: 4001,
+  localPort: 5174,
   buildDir: "../client/dist",
 );
 
